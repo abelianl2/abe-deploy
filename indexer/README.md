@@ -1,13 +1,13 @@
 ## Deploy indexer server
 start indexer server
 
-## requirement
+## Requirement
 - docker
 - docker-compose
 - tar
 - curl
 
-## usage
+## Usage
 
 1. download config
 
@@ -40,3 +40,9 @@ curl -L https://github.com/abelianl2/abe-indexer/releases/download/v0.1.0/abe-in
  ```
   docker-compose -f docker-compose.yml ps
  ```
+
+## Project path
+
+learn more about indexer  , please visit 
+ [indexer server](https://github.com/abelianl2/abe-indexer)
+ 
