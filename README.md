@@ -19,7 +19,7 @@ docker-compose
 2. contract
 
 
-3. L2 Node 
+3. QDay Node 
 
 
 
@@ -30,4 +30,7 @@ docker-compose
 
 
 
-6. check
+7. bridge
+
+
+8. check
