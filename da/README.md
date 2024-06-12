@@ -1,1 +1,0 @@
-## deploy indexer and committer server
