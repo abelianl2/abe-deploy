@@ -12,7 +12,8 @@ start bridge server
 1. download config
 
 ```
-curl -L https://github.com/abelianl2/bridge-server/releases/download/v0.1.0/bridge-server-config -o bridge-server-config.tar.gz && tar -xzvf bridge-server-config.tar.gz
+curl -L https://github.com/abelianl2/bridge-server/releases/download/v0.1.0/bridge-server-config.zip > bridge-server-config.zip && unzip bridge-server-config.zip
+
 ```
 
 2. update config file
