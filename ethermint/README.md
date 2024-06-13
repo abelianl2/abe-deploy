@@ -25,6 +25,3 @@ cd abe-node-deploy
 docker-compose up -d node0
 
 docker-compose down
-
-
-## 自定义genesis
