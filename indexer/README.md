@@ -12,7 +12,8 @@ start indexer server
 1. download config
 
 ```
-curl -L https://github.com/abelianl2/abe-indexer/releases/download/v0.1.0/abe-indexer-config -o abe-indexer-config.tar.gz && tar -xzvf abe-indexer-config.tar.gz
+curl -L https://github.com/abelianl2/abe-indexer/releases/download/v0.1.0/indexer-server-config.zip > indexer-server-config.zip && unzip indexer-server-config.zip
+
 ```
 
 2. update config file
