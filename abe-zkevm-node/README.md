@@ -46,17 +46,17 @@ cd abe-zkevm-node-deploy
 ./stop.sh
 ```
 
-## abe-zkevm-node rpc 部署
+## abe-zkevm-node-rpc 部署
 
 1. 下载部署目录
 
 ```
-wget https://github.com/abelianl2/abe-zkevm-node/releases/download/v0.1.0/abe-zkevm-node-deploy.tar.gz && tar -xzvf abe-zkevm-node-deploy.tar.gz
+wget https://github.com/abelianl2/abe-zkevm-node/releases/download/v0.1.0/abe-zkevm-node-rpc-deploy.tar.gz && tar -xzvf abe-zkevm-node-rpc-deploy.tar.gz
 ```
 
-2. 启停 abe-zkevm-node
+2. 启停 abe-zkevm-node-rpc
 ```
-cd abe-zkevm-node-deploy
+cd abe-zkevm-node-rpc-deploy
 
 ./start.sh
 
