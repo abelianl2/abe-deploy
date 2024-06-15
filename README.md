@@ -14,7 +14,7 @@ docker-compose
 
 ## usage 
 
-0. account
+0. ### account
 
  进入 [account](https://github.com/abelianl2/abe-deploy/tree/main/account) 模块
 执行如下命令
@@ -28,24 +28,33 @@ node wallets.js | tee wallets.txt
 
 
 
-1. ethermint
+1. ### ethermint
 
 
-2. contract
+2. ### contract
+
+- QDay matic
 
 
-3. QDay Node 
+- zkevm-contracts 的部署
+
+    如何使用？请阅读 [zkevm-contracts](https://github.com/abelianl2/abe-deploy/blob/main/contract/zkevm-contracts/README.md)
+    
+    成功执行完相关操作后，将产生的2个文件(deploy_output.json,genesis.json) 保存下来 ，作为下一步部署的依据
+
+
+3. ### qday node 
 
 
 
-4. bridge contract
+4. ### bridge contract
 
 
-5. committer and indexer
+5. ### committer and indexer
 
 
 
-7. bridge
+7. ### bridge
 
 
-8. check
+8. ### check
