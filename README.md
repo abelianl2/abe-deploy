@@ -1,7 +1,7 @@
 # abe-depoly
 how does depoly QDay chain (abelianL2) 
 
-### prerequirement
+## prerequirement
 
 os: centos 7.9
 
@@ -12,7 +12,22 @@ docker :20.10
 docker-compose
 
 
-### usage 
+## usage 
+
+0. account
+
+ 进入 [account](https://github.com/abelianl2/abe-deploy/tree/main/account) 模块
+执行如下命令
+
+```shell
+npm i
+node wallets.js | tee wallets.txt
+
+```
+如 正常执行，则 产生wallets.txt 文件,此文件包含 部署需要的 account
+
+
+
 1. ethermint
 
 
