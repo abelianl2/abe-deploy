@@ -53,7 +53,33 @@ docker-compose
 
 5. ### committer and indexer
 
+- indexer
 
+     [indexer 使用手册](https://github.com/abelianl2/abe-deploy/blob/main/indexer/README.md)
+    
+    以下字段是经常变动：
+    ```
+    indexer.toml 
+        database-source
+  
+    bitcoin.toml
+        network-name
+        rpc-host
+        rpc-user
+        rpc-pass
+        indexer-listen-address
+  
+        eth-rpc-url 
+        eth-priv-key
+        contract-address
+        aa-b2-api
+    ```
+  其他字段的使用，参考[配置说明](https://github.com/abelianl2/abe-indexer/tree/release-0.1.0/docs)
+
+
+
+
+- committer
 
 7. ### bridge
 
