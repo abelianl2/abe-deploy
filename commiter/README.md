@@ -8,27 +8,21 @@
 ## Usage
 > Docker compile relies on variable data provided by other environments and needs to be configured in the. env file
 
-1. download project
+1. download file
 ```shell
-git clone https://github.com/abelianl2/abe-committer.git
+curl -L https://github.com/abelianl2/abe-committer/releases/download/v0.1.0/committer-cfg.zip > committer-cfg.zip && unzip committer-cfg.zip
 ```
 
 
 2. Fill in the env environment variables below
 
 ```shell
-cd test-docker
+cd committer-cfg
 vim .env
 ```
 
 ```shell
 ETHERMINT_IMAGE=
-LOG_LEVEL=
-LOG_FORMAT=
-MYSQL_DATA_SOURCE=
-MYSQL_MAX_IDLE_CONNS=
-MYSQL_MAX_OPEN_CONNS=
-MYSQL_CONN_MAX_LIFETIME=
 RPC_URL=
 BLOCKCHAIN=
 INIT_BLOCK_NUMBER=
@@ -43,9 +37,6 @@ B2NODE_GRPC_HOST=
 B2NODE_GRPC_PORT=
 B2NODE_RPC_URL=
 B2NODE_COIN_DENOM=
-BITCOIN_NETWORK_NAME=
-BITCOIN_PRIVATE_KEY=
-COMMITTER_DESTINATION_ADDRESS=
 ENDPOINT=
 RPCENDPOINT=
 USERNAME=
@@ -61,7 +52,7 @@ AUTHTOKEN=
 
 3. After filling in the env above, start directly
 ```shell
-docker-compose up
+docker-compose up -d
 ```
 
 ## Project path
