@@ -10,7 +10,7 @@
 
 1. download file
 ```shell
-curl -L https://github.com/abelianl2/abe-committer/releases/download/v0.1.0/committer-cfg.zip > committer-cfg.zip && unzip committer-cfg.zip
+curl -L https://github.com/abelianl2/abe-committer/releases/download/v0.1.2/committer-cfg.zip > committer-cfg.zip && unzip committer-cfg.zip
 ```
 
 
@@ -18,19 +18,19 @@ curl -L https://github.com/abelianl2/abe-committer/releases/download/v0.1.0/comm
 
 ```shell
 cd committer-cfg
-vim .env
+mv .env.example .env
 ```
 
 ```shell
-ETHERMINT_IMAGE=
+ETHERMINT_IMAGE
 RPC_URL=
-BLOCKCHAIN=
-INIT_BLOCK_NUMBER=
+BLOCKCHA
+INIT_BLOCK_NUMBER=<suggest 1>
 INIT_BLOCK_HASH=
 POLYGON_ZKEVM_ADDRESS=
 PROPOSAL_BATCHES_LIMITNUM=
 INIT_PROPOSAL_ID=
-B2NODE_PRIVATE_KEY=
+B2NODE_PRIVATE_KEY=<suggest mykey privatekey>
 B2NODE_ADDRESS=
 B2NODE_CHAIN_ID=
 B2NODE_GRPC_HOST=
