@@ -114,5 +114,5 @@ docker-compose
   
 8. ### check
 
-   - 检查余额 ,可以使用兼容EVM的钱包 [metamask](https://metamask.io/download/)
-   - 部署区块浏览器，兼容EVM的浏览器 [blockscout](https://github.com/0xPolygonHermez/blockscout)
+ - 检查余额 ,可以使用兼容EVM的钱包 [metamask](https://metamask.io/download/)
+ - 部署区块浏览器，兼容EVM的浏览器 [blockscout](https://github.com/0xPolygonHermez/blockscout)
