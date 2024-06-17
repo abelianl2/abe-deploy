@@ -4,35 +4,39 @@
 - docker
 - docker-compose
 - tar
+- jq
 - wget
 
-## 下载部署文件
+## Download deploy file
 ```
-wget https://github.com/abelianl2/abe-node/releases/download/v0.1.0/abe-node-deploy.tar.gz && tar -xzvf abe-node-deploy.tar.gz
+wget https://github.com/abelianl2/abe-node/releases/download/v0.1.0/abe-node-deploy.tar.gz && tar -xzvf abe-node-deploy.tar.gz && rm -rf abe-node-deploy.tar.gz
 ```
 
-
-## 替换配置文件中的私钥
+## Replace private key of config file with yourself
 ```
 cd abe-node-deploy
 
 vim init.sh
 
-# 将init.sh文件中这4个key对应的密钥替换为自己的私钥
+# Replace private key of init.sh
 deploykey
 sequencerkey
 aggregatorkey
 committerkey
 ```
 
-## 生成配置文件和数据目录
+## Generate config file
 ```
 cd abe-node-deploy
 
 ./init.sh
 ```
 
-## docker启停单节点
+## Update config file
+
+[config](https://github.com/abelianl2/abe-node/tree/release/v0.1.0/docs/config) 
+
+## docker start or stop single node
 ```
 docker-compose up -d node0
 
