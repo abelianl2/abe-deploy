@@ -6,20 +6,25 @@
 - tar
 - wget
 
-## 部署方案
-abe-zkevm-node 的部署分为两个部分，分别部署在两台服务器上
+
+## The deployment of abe-zkevm-node is divided into two parts, each deployed on separate servers
 1. abe-zkevm-node-db 
-2. abe-zkevm-node（不包含db）
+2. abe-zkevm-node（without db）
 
-## abe-zkevm-node-db 部署
+## abe-zkevm-node-db deploy
 
-1. 下载部署目录
+1. Download Deploy file
 
 ```
 wget https://github.com/abelianl2/abe-zkevm-node/releases/download/v0.1.0/abe-zkevm-node-db-deploy.tar.gz && tar -xzvf abe-zkevm-node-db-deploy.tar.gz
 ```
 
-2. 启停 abe-zkevm-node-db
+2. Update config file
+
+    [config.json](https://github.com/abelianl2/abe-zkevm-node/blob/release/v0.1.0/config/environments/testnet/postgresql.conf)
+
+
+2. Start or stop abe-zkevm-node-db
 ```
 cd abe-zkevm-node-db-deploy
 
@@ -29,15 +34,29 @@ cd abe-zkevm-node-db-deploy
 ```
 
 
-## abe-zkevm-node 部署
+## abe-zkevm-node deploy
 
-1. 下载部署目录
+1. Download deploy file
 
 ```
 wget https://github.com/abelianl2/abe-zkevm-node/releases/download/v0.1.0/abe-zkevm-node-deploy.tar.gz && tar -xzvf abe-zkevm-node-deploy.tar.gz
 ```
 
-2. 启停 abe-zkevm-node
+2. Update config file
+
+    [config.json](https://github.com/abelianl2/abe-zkevm-node/blob/release/v0.1.0/test/config/test.node.config.toml)
+
+
+3. Replace Sequencer and aggregator address with yourself
+```
+[SequenceSender]
+L2Coinbase = "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+
+[Aggregator]
+SenderAddress = "0x70997970c51812dc3a010c7d01b50e0d17dc79c8"
+```
+
+3. Start or stop abe-zkevm-node
 ```
 cd abe-zkevm-node-deploy
 
@@ -46,15 +65,21 @@ cd abe-zkevm-node-deploy
 ./stop.sh
 ```
 
-## abe-zkevm-node-rpc 部署
+## abe-zkevm-node-rpc Deploy
 
-1. 下载部署目录
+1. Download deploy file
 
 ```
 wget https://github.com/abelianl2/abe-zkevm-node/releases/download/v0.1.0/abe-zkevm-node-rpc-deploy.tar.gz && tar -xzvf abe-zkevm-node-rpc-deploy.tar.gz
 ```
 
-2. 启停 abe-zkevm-node-rpc
+
+2. Update config file
+
+[config.json](https://github.com/abelianl2/abe-zkevm-node/tree/release/v0.1.0/config/environments/testnet)
+
+
+3. Start or stop abe-zkevm-node-rpc
 ```
 cd abe-zkevm-node-rpc-deploy
 
